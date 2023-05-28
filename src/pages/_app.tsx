@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import Script from 'next/script'
@@ -18,7 +18,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         </Head>
         <Component {...pageProps} />
         <Script src="js/fancybox.min.js"/>
-        {/* <Script src="js/functions.js"/> */}
+        <Script src="js/functions.js"/>
       </>
     );
   };

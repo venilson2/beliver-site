@@ -6,7 +6,7 @@ document.querySelector( "#menu-toggle" ).addEventListener( "click", function(e) 
 	e.preventDefault();
 	return false;
 });
-
+/*
 document.querySelectorAll( ".main-navigation .menu-item-has-children > a" ).forEach( function( menu_link ) {
 	menu_link.addEventListener( "click", function(e) {
 		// check if we are in mobile view (if mobile hamburger toggle is visible)
@@ -750,3 +750,4 @@ window.requestAnimFrame = ( function() {
 			window.setTimeout( callback, 1000 / 60 );
 		};
 })();
+*/
