@@ -5,7 +5,7 @@ import Navbar from "../header/navbar";
 
 const Header = () => {
 
-  const videoRef = useRef({ muted: false, autoplay: false, loop: false });
+  const videoRef = useRef({ muted: false, autoplay: true, loop: true });
   const audioRef = useRef({ muted: false, autoplay: false, loop: false });
 
   useEffect(() => {
@@ -66,7 +66,6 @@ const Header = () => {
           <video
             ref={videoRef as React.RefObject<HTMLVideoElement>}
             src="/media/sample-featured-video2.mp4"
-            poster="/tmp/sample-featured-video2.jpg"
             preload="metadata"
             width={1320}
             height={756}
