@@ -6,8 +6,10 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="site-identity">
           <a href="index.html" className="custom-logo-link" rel="home" title="Visit homepage">
-            <img src="fonts/logo.svg" className="custom-logo" width="131" height="36" alt="Geração Samueel" />
-            <img src="fonts/logo-dark.svg" className="custom-logo alt-version" width="131" height="36" alt="Geração Samuel" />
+            <picture>
+              <img src="fonts/logo.svg" className="custom-logo" width="131" height="36" alt="Geração Samueel" />
+              <img src="fonts/logo-dark.svg" className="custom-logo alt-version" width="131" height="36" alt="Geração Samuel" />
+            </picture>
           </a>
           <p className="site-description screen-reader-text">Premium Podcast HTML Template</p>
         </div>
@@ -18,12 +20,12 @@ const Navbar = () => {
           <ul id="menu-main" className="menu">
             <Link className="current-menu-item" href="/">Home</Link>
             <li className="menu-item-has-children">
-              <a href="/">Episódios<em className="mdi mdi-chevron-down"></em></a>
+            <Link className="current-menu-item" href="/">Episódios<em className="mdi mdi-chevron-down"></em></Link>
               <ul className="sub-menu">
-                <li><a href="/">Season 1</a></li>
-                <li><a href="/">Season 2</a></li>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/">Home</Link></li>
                 <li className="menu-item-has-children">
-                  <a href="#">Estudo biblíco</a>
+                  <Link href="/">Estudo biblíco</Link>
                   <ul className="sub-menu">
                     <li><a href="#">Mateus</a></li>
                     <li><a href="#">Lucas</a></li>
