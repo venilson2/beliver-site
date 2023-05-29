@@ -33,8 +33,8 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li className=""><a>Blog</a></li>
-            <li className=""><a href="/contato">Contato</a></li>
+            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/contact">Contato</Link></li>
             <li className="menu-item-scheme">
               <a href="#" title="Toggle color scheme"><em className="mdi mdi-weather-night"></em><em className="mdi mdi-white-balance-sunny"></em><span>Trocar tema</span></a>
             </li>

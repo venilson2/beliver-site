@@ -1,7 +1,5 @@
-import Head from "next/head";
 import AudioPlayer from "./AudioPlayer";
 import { useEffect, useRef } from "react";
-import Navbar from "../header/navbar";
 
 const Header = () => {
 
@@ -30,9 +28,6 @@ const Header = () => {
 
   return (
     <>
-      <Head>
-        <title>Geração Samuel | Home</title>
-      </Head>
       <header id="featured" className="site-featured">
         <div id="featured-media" className="featured-media has-overlay">
           <div className="wrapper">
