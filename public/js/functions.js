@@ -6,7 +6,7 @@ document.querySelector( "#menu-toggle" ).addEventListener( "click", function(e) 
 	e.preventDefault();
 	return false;
 });
-/*
+
 document.querySelectorAll( ".main-navigation .menu-item-has-children > a" ).forEach( function( menu_link ) {
 	menu_link.addEventListener( "click", function(e) {
 		// check if we are in mobile view (if mobile hamburger toggle is visible)
@@ -28,6 +28,7 @@ document.querySelectorAll( ".main-navigation .menu-item-has-children > a" ).forE
 		}
 	});
 });
+/*
 // By default, collapse current sub-menus for mobile view
 document.querySelectorAll( ".main-navigation .current-menu-parent, .main-navigation .current-menu-ancestor" ).forEach( function( menu_item ) {
 	menu_item.classList.add( "collapse" );

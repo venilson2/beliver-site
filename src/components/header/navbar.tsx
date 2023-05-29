@@ -11,7 +11,6 @@ const Navbar = () => {
               <img src="fonts/logo-dark.svg" className="custom-logo alt-version" width="131" height="36" alt="Geração Samuel" />
             </picture>
           </a>
-          <p className="site-description screen-reader-text">Premium Podcast HTML Template</p>
         </div>
         <div id="menu-toggle" className="mobile-menu-toggle">
           <a href="#menu-main" title="Toggle menu"><em className="mdi mdi-menu"></em><em className="mdi mdi-close"></em></a>
