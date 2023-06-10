@@ -1,8 +1,14 @@
 import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
-    <header id="top-header" className="site-header">
+    <header id="top-header" className={`site-header ${isMenuOpen ? 'mobile-menu-opened' : ''}`}>
       <div className="wrapper">
         <div className="site-identity">
           <a href="index.html" className="custom-logo-link" rel="home" title="Visit homepage">
@@ -12,7 +18,7 @@ const Navbar = () => {
             </picture>
           </a>
         </div>
-        <div id="menu-toggle" className="mobile-menu-toggle">
+        <div id="menu-toggle" className="mobile-menu-toggle" onClick={toggleMenu}>
           <a href="#menu-main" title="Toggle menu"><em className="mdi mdi-menu"></em><em className="mdi mdi-close"></em></a>
         </div>
         <nav className="main-navigation">

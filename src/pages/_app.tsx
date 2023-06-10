@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-css-tags */
 import React, { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -24,7 +25,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <link rel="stylesheet" href="/css/fancybox.css" />
         <link rel="stylesheet" href="/css/style.css" />
       </Head>
-      <Component {...pageProps} />
+      <Component {...pageProps}/>
       <Script src="js/fancybox.min.js" />
       <Script src="js/functions.js" />
     </>
