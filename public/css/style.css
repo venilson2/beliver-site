@@ -65,6 +65,7 @@ body {
 	--font-size--xx-large: 2.488rem;
 	--font-size--display: 2.986rem;
 	--font-size--huge: 3.583rem;
+	--font-size--xxxx-large: calc(var(--font-size--large) * 2.84);
 
 	--font-weight--light: 300;
 	--font-weight--normal: 400;
@@ -1505,6 +1506,11 @@ h1.display,
 h1.huge,
 .h1-huge {
 	font-size: var(--font-size--display);
+}
+
+h1.xxxx-large,
+.h1-xxxx-large {
+	font-size: var(--font-size--xxxx-large);
 }
 
 @media (min-width: 768px) {

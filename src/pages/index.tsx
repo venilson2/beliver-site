@@ -1,7 +1,9 @@
 import Footer from "@/components/footer/footer";
 import Navbar from "@/components/header/navbar";
-import Content from "@/components/home/Content";
-import Header from "@/components/home/Header";
+import Banner from "@/components/home/Banner";
+import FollowInsta from "@/components/home/FollowInsta";
+import LastPodcast from "@/components/home/LastPodcast";
+import NextEvent from "@/components/home/NextEvent";
 import Head from "next/head";
 
 const Home = () => {
@@ -12,8 +14,10 @@ const Home = () => {
         <title>Geração Samuel | Home</title>
       </Head>
       <Navbar />
-      <Header />
-      <Content />
+      <Banner />
+      <NextEvent />
+      <LastPodcast />
+      <FollowInsta />
       <Footer />
     </>
   );

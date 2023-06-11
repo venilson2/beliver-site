@@ -40,7 +40,7 @@ const Footer = () => {
               <h3 className="widget-title">Não perca nossos episódios semanais</h3>
               <form className="mc4wp-form" onSubmit={handleSubmit}>
                 <div className="mc4wp-form-fields">
-                  <p>Algum texto bacana Algum texto bacana Algum texto bacana</p>
+                  <p>Seja um agente de mudança! Una-se a nós e ajude-nos a levar a mensagem de Jesus ao mundo.</p>
                   <p className="one-line">
                     <label htmlFor="subscribe_email" className="sr-only">
                       Subscription Email

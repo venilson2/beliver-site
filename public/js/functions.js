@@ -79,6 +79,8 @@ document.addEventListener( "click", function(e) {
 	}
 });
 
+*/
+
 // Toggle color scheme (default or alt, see also detect-support.js).
 document.querySelector( ".main-navigation .menu-item-scheme > a" ).addEventListener( "click", function(e) {
 	var current_scheme = document.documentElement.getAttribute( "data-scheme" );
@@ -95,17 +97,17 @@ document.querySelector( ".main-navigation .menu-item-scheme > a" ).addEventListe
 });
 
 // Toggle visibility of search form in primary menu.
-document.querySelector( ".main-navigation .menu-item-search > a" ).addEventListener( "click", function(e) {
-	document.body.classList.toggle( "searchform-opened" );
-	if ( document.body.classList.contains( "searchform-opened" ) ) {
-		window.setTimeout( function() {
-			document.querySelector( ".main-navigation .searchform input[type=search]" ).focus();
-		}, 150 );
-	}
-	e.preventDefault();
-	return false;
-});
-
+// document.querySelector( ".main-navigation .menu-item-search > a" ).addEventListener( "click", function(e) {
+// 	document.body.classList.toggle( "searchform-opened" );
+// 	if ( document.body.classList.contains( "searchform-opened" ) ) {
+// 		window.setTimeout( function() {
+// 			document.querySelector( ".main-navigation .searchform input[type=search]" ).focus();
+// 		}, 150 );
+// 	}
+// 	e.preventDefault();
+// 	return false;
+// });
+/*
 // Hide search form if ESC character is pressed
 document.querySelector( ".main-navigation .searchform input[type=search]" ).addEventListener( "keyup", function(e) {
 	if ( 27 === e.keyCode ) {

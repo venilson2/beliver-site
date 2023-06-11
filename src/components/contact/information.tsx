@@ -1,5 +1,5 @@
+import Map from "./,map"
 import Form from "./form"
-import GoogleMaps from "./googleMaps"
 
 const Information = () => {
     return (
@@ -21,6 +21,7 @@ const Information = () => {
                     <p className="text-faded text-uppercase">+1 2345 678 910<br>+8 2234 835 199</p>
                 </div> */}
                         </div>
+                        <Map />
                         <Form />
                     </div>
                 </div>

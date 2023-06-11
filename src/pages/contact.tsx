@@ -16,7 +16,6 @@ const Contact = () => {
           <div className="wrapper">
             <div className="page-title">
               <h1 className="display">Contato</h1>
-              <h6 className="tagline">Entre em contato</h6>
             </div>
           </div>
         </div>
