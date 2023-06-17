@@ -9,6 +9,7 @@ const Footer = () => {
 
   return (
     <>
+      <br />
       <footer className="site-footer">
         <a id="scroll-to-top" className="scroll-to-top" href="#top-header" title="To the top">
           <em className="mdi mdi-chevron-up"></em>

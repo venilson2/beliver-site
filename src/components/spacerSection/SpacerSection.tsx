@@ -7,11 +7,12 @@ interface SpacerSectionProps {
     return (
       <>
         <section id="featured" className="site-featured">
-          <div id="featured-media" className="featured-media has-overlay">
+          <div id="featured-media" className="featured-media">
             <div className="wrapper">
               <div className="page-title">
                 <h6 className="tagline">{subtitle}</h6>
                 <h1 className="display">{title}</h1>
+                <br />
               </div>
             </div>
           </div>
