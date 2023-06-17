@@ -1,40 +1,57 @@
 import React, { useEffect, useState } from 'react';
-
-interface CountdownTimerProps {
-  targetDate: string; // Data no formato "YYYY-MM-DDTHH:MM:SS"
-  className?: string; // Propriedade className opcional
+interface CountdownProps {
+  targetDate: Date;
 }
 
-const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate, className }) => {
-  const [timeLeft, setTimeLeft] = useState<string>('');
+const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
+  const [timeLeft, setTimeLeft] = useState<{ days: number, hours: number, minutes: number, seconds: number }>({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
 
   useEffect(() => {
-    // Função para calcular o tempo restante até a data alvo
-    const calculateTimeLeft = () => {
-      const targetTime = new Date(targetDate).getTime();
-      const currentTime = new Date().getTime();
-      const timeDifference = targetTime - currentTime;
+    const intervalId = setInterval(() => {
+      const now = new Date().getTime();
+      const difference = targetDate.getTime() - now;
 
-      if (timeDifference > 0) {
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((timeDifference / 1000 / 60) % 60);
-        const seconds = Math.floor((timeDifference / 1000) % 60);
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-        setTimeLeft(`${days} : ${hours} : ${minutes} :  ${seconds}`);
-      } else {
-        setTimeLeft('Tempo expirado!');
+      setTimeLeft({ days, hours, minutes, seconds });
+
+      if (difference < 0) {
+        clearInterval(intervalId);
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
-    };
+    }, 1000);
 
-    const timer = setInterval(calculateTimeLeft, 1000);
-
-    return () => {
-      clearInterval(timer);
-    };
+    return () => clearInterval(intervalId);
   }, [targetDate]);
 
-  return <div className={className}>{timeLeft}</div>;
+  return (
+    <div className="countdownContainer">
+      <div className="countdownItem">
+        <div className="countdownNumber">{timeLeft.days}</div>
+        <div className="countdownLabel">Dia</div>
+      </div>
+      <div className="countdownItem">
+        <div className="countdownNumber">{timeLeft.hours}</div>
+        <div className="countdownLabel">Hora</div>
+      </div>
+      <div className="countdownItem">
+        <div className="countdownNumber">{timeLeft.minutes}</div>
+        <div className="countdownLabel">Minuto</div>
+      </div>
+      <div className="countdownItem">
+        <div className="countdownNumber">{timeLeft.seconds}</div>
+        <div className="countdownLabel">Segundos</div>
+      </div>
+    </div>
+  );
 };
 
 export default CountdownTimer;

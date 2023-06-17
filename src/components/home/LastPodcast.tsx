@@ -29,7 +29,6 @@ const LastPodcast = () => {
 
   return (
     <>
-    <SpacerSection title="Crente News" subtitle="conheça também nosso podCast" />
       <div id="featured" className="site-featured">
         <div id="featured-media" className="featured-media has-overlay">
           <div className="wrapper">
@@ -60,13 +59,13 @@ const LastPodcast = () => {
               </div>
             </div>
           </div>
-          <video
+          {/* <video
             ref={videoRef as React.RefObject<HTMLVideoElement>}
             src="/media/sample-featured-video2.mp4"
             preload="metadata"
             width={1320}
             height={756}
-          />
+          /> */}
         </div>
       </div>
     </>

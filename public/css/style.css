@@ -5923,3 +5923,44 @@ body:not(.has-sidebar) .alignfull {
 		animation-fill-mode: forwards;
 	}
 }
+
+.countdownContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	font-family: Arial, sans-serif;
+  }
+  
+.countdownItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.countdownNumber {
+	font-size: 8rem;
+	font-weight: bold;
+}
+
+.countdownLabel {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+  
+@media (max-width: 600px) {
+
+	.countdownContainer {
+		justify-content: center;
+	}
+
+	.countdownItem {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+
+	.countdownNumber {
+		font-size: 36px;
+	}
+}

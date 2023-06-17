@@ -1,8 +1,8 @@
 import Footer from "@/components/footer/footer";
 import Navbar from "@/components/header/navbar";
 import Banner from "@/components/home/Banner";
+import HopeEnvent from "@/components/home/HopeEnvent";
 import LastPodcast from "@/components/home/LastPodcast";
-import NextEvent from "@/components/home/NextEvent";
 import Head from "next/head";
 
 const Home = () => {
@@ -14,8 +14,8 @@ const Home = () => {
       </Head>
       <Navbar />
       <Banner />
-      <NextEvent />
-      {/* <LastPodcast /> */}
+      <HopeEnvent />
+      <LastPodcast />
       <Footer />
     </>
   );

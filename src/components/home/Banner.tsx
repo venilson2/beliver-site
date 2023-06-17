@@ -4,8 +4,8 @@ const Banner = () => {
   return (
     <>
     <header id="featured" className="site-featured">
-		<div id="featured-media" className="featured-media has-overlay" style={{ height: '80vh' }}>
-			<div className="wrapper" style={{ height: '80vh' }}>
+		<div id="featured-media" className="featured-media has-overlay" style={{ height: '88vh' }}>
+			<div className="wrapper" style={{ height: '88vh' }}>
 				<div className="featured-episode">
 					<div className="featured-episode-text">
 						<p className="text-uppercase text-weight-medium text-opacity-75">A Paz do Senhor Jesus</p>
@@ -31,7 +31,7 @@ const Banner = () => {
 					</div>
 				</div>
 			</div>
-			<video src="media/sample-featured-video2.mp4" poster="tmp/sample-featured-video2.jpg" preload="metadata" muted={true} autoPlay={false} loop={true} width="1320" height="756"></video>
+			{/* <video src="media/galaxy.mp4" poster="tmp/sample-featured-video2.jpg" preload="metadata" muted={true} autoPlay={true} loop={true} width="1320" height="756"></video> */}
 		</div>
 	</header>
   </>
