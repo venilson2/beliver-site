@@ -15,7 +15,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <NextEvent />
-      <LastPodcast />
+      {/* <LastPodcast /> */}
       <Footer />
     </>
   );

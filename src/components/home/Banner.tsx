@@ -3,35 +3,37 @@ import React from 'react';
 const Banner = () => {
   return (
     <>
-        <section id="featured" className="site-featured">
-        <div id="featured-media" className="featured-media has-overlay">
-            <div className="wrapper">
-                <div className="featured-episode">
-                    <div className="featured-episode-text">
-                        <div className="sales-box-content ">
-                            <h1 className="xxxx-large">Geração Samuel</h1>
-                            <br />
-                                <p className="alignjustify">
-                                    Buscamos impactar vidas, tocar corações e transformar comunidades através da arte teatral. 
-                                    Queremos ser <ins>instrumentos de Cristo</ins> para tocar a alma das pessoas, proporcionando momentos de reflexão, 
-                                    inspiração e conexão com o Senhor Jesus. Nosso propósito é compartilhar o amor de Deus e a mensagem transformadora de Cristo.
-                                </p>
-                            <br />
-                            <a href="#" className="button button-big button-filled button-primary">Conheça nossa história!</a>
-                        </div>
-                    </div>
-                </div>
-                {/* <div className="featured-cover">
-                    <a href="single-episode.html" className="shine-on-hover">
-                        <picture>
-                        <img src="images/sample-featured2.jpg" alt="Geração Samuel" />
-                        </picture>
-                        <span className="shine-canvas"></span>
-                    </a>
-                </div> */}
-            </div>
-        </div>
-    </section>
+    <header id="featured" className="site-featured">
+		<div id="featured-media" className="featured-media has-overlay" style={{ height: '80vh' }}>
+			<div className="wrapper" style={{ height: '80vh' }}>
+				<div className="featured-episode">
+					<div className="featured-episode-text">
+						<p className="text-uppercase text-weight-medium text-opacity-75">A Paz do Senhor Jesus</p>
+						<h1 className="display">Geração Samuel</h1>
+                        <p className="alignjustify">
+                            Buscamos impactar vidas, tocar corações e transformar comunidades através da arte teatral. 
+                            Queremos ser <ins>instrumentos de Cristo</ins> para tocar a alma das pessoas, proporcionando momentos de reflexão, 
+                            inspiração e conexão com o Senhor Jesus. Nosso propósito é compartilhar o amor de Deus e a mensagem transformadora de Cristo.
+                        </p>
+					</div>  
+					<div className="episode-player episode-type-audio">
+					</div>
+				</div>
+				<div className="featured-cover">
+				</div>
+				<div className="featured-actions">
+					<div className="featured-actions-main">
+						{/* <a href="#"><span className="mdi mdi-podcast"></span> Subscribe on Apple Podcasts</a> */}
+						{/* <a href="#"><span className="mdi mdi-rss"></span> Subscribe using RSS Feed</a> */}
+					</div>
+					<div className="featured-actions-secondary">
+						{/* <a href="episodes.html">Browse all episodes <span className="mdi mdi-trending-neutral"></span></a> */}
+					</div>
+				</div>
+			</div>
+			<video src="media/sample-featured-video2.mp4" poster="tmp/sample-featured-video2.jpg" preload="metadata" muted={true} autoPlay={false} loop={true} width="1320" height="756"></video>
+		</div>
+	</header>
   </>
   );
 };
