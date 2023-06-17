@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link className="current-menu-item" href="/">Home</Link>
             <Link className="current-menu-item" href="/about">Sobre</Link>
             <li className="menu-item-has-children">
-            <Link className="current-menu-item" href="/">Episódios<em className="mdi mdi-chevron-down"></em></Link>
+            {/* <Link className="current-menu-item" href="/">Episódios<em className="mdi mdi-chevron-down"></em></Link> */}
               <ul className="sub-menu">
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/">Home</Link></li>
@@ -40,11 +40,15 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li><Link href="/blog">Blog</Link></li>
+            {/* <li><Link href="/blog">Blog</Link></li> */}
             <li><Link href="/event">Evento</Link></li>
             <li><Link href="/contact">Contato</Link></li>
             <li className="menu-item-scheme">
-              <a href="#" title="Toggle color scheme"><em className="mdi mdi-weather-night"></em><em className="mdi mdi-white-balance-sunny"></em><span>Trocar tema</span></a>
+              <a href="#" title="Toggle color scheme">
+                {/* <em className="mdi mdi-weather-night"></em> */}
+                {/* <em className="mdi mdi-white-balance-sunny"></em> */}
+                {/* <span>Trocar tema</span> */}
+              </a>
             </li>
             {/* <li className="menu-item-search">
               <a href="#searchform" title="Toggle search"><em className="mdi mdi-magnify"></em><em className="mdi mdi-close"></em></a>

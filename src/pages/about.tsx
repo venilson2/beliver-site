@@ -25,12 +25,14 @@ const About = () => {
             <AuthorBox />
             <AuthorBox />
             <blockquote className="alignwide">
-              <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-              <cite>João 13:24</cite>
+              <p>
+                E disse-lhes: Vão pelo mundo todo e preguem o evangelho a todas as pessoas.
+              </p>
+              <cite>Marcos 16:15</cite>
             </blockquote>
             <figure className="block-image alignwide shine-on-children-hover">
               <a href="tmp/sample-1400x900-1.jpg" data-fancybox="test-gallery">
-                <img src="images/sample-1400x900-1.jpg" width="1400" height="900" alt="" />
+                <img src="images/sample-540x540-1.jpg" width="1400" height="900" alt="" />
                   <span className="shine-canvas"></span>
                 </a>
             </figure>

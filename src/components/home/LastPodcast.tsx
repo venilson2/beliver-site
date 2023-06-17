@@ -35,8 +35,11 @@ const LastPodcast = () => {
             <div className="featured-episode">
               <div className="featured-episode-text">
                 <p className="text-uppercase text-weight-medium text-opacity-75">Episódio Em Destaque</p>
-                <h1 className="display"><a href="single-episode.html">#13: A alegria de colocar ideias em realidade e caneta no papel</a></h1>
-                <p>Vince Smith met bandmates Jim Kelly and Nancy Gibbs at a Sex Pistols concert, where he tried to kiss Sid guitar and got a bloody nose. Together they formed Aftershock.</p>
+                <h1 className="display"><a href="single-episode.html">#13: A alegria do Senhor que vive em mim</a></h1>
+                <p>
+                  Sua graça infinita preenche almas vazias, proporcionando paz e esperança. Sua luz brilha, 
+                  dissipando trevas, revelando um caminho de amor e reconciliação.
+                </p>
               </div>
               <AudioPlayer />
             </div>
