@@ -1,5 +1,6 @@
 import Information from "@/components/contact/information";
 import Footer from "@/components/footer/footer";
+import Header from "@/components/header/Header";
 import Navbar from "@/components/header/navbar";
 import Head from "next/head";
 
@@ -11,15 +12,7 @@ const Contact = () => {
         <meta name="Contato geração samuel" content="Contato geração samuel" />
       </Head>
       <Navbar />
-      <header id="featured" className="site-featured">
-        <div id="featured-media" className="featured-media has-overlay">
-          <div className="wrapper">
-            <div className="page-title">
-              <h1 className="display">Contato</h1>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header title="Contato" imgUrl="images/sample-540x540-2.jpg"/>
       <Information />
       <Footer />
      </> 

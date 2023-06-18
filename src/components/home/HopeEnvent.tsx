@@ -12,7 +12,9 @@ const HopeEnvent = () => {
                         <div className="aligncenter">
                             <p className="text-weight-light text-opacity-75 text-center h4">Proximo Evento</p>
                             <p className="text-uppercase text-weight-bold text-opacity-75 text-center h1-display">Believer - A esperança</p>
-                            <h1 className="text-weight"></h1><CountdownTimer targetDate={targetDate} />
+                            <h1 className="text-weight">
+                                <CountdownTimer targetDate={targetDate} countdownNumber="countdownNumberLg" countdownLabel="countdownLabelLg" />
+                            </h1>
                         </div>
                         <div style={{ width: '100vw' }} className="text-center">
                             <Link href="/event" className="button button-primary">Saiba Mais!</Link> 

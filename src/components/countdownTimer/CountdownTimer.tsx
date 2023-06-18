@@ -1,9 +1,12 @@
+import formatarDate from '@/helpers/FormatDate';
 import React, { useEffect, useState } from 'react';
 interface CountdownProps {
   targetDate: Date;
+  countdownNumber: string
+  countdownLabel: string;
 }
 
-const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
+const CountdownTimer = ({ targetDate, countdownNumber, countdownLabel }: CountdownProps) => {
   const [timeLeft, setTimeLeft] = useState<{ days: number, hours: number, minutes: number, seconds: number }>({
     days: 0,
     hours: 0,
@@ -33,24 +36,29 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="countdownContainer">
-      <div className="countdownItem">
-        <div className="countdownNumber">{timeLeft.days}</div>
-        <div className="countdownLabel">Dias</div>
+    <>
+      <div className="countdownContainer">
+        <div className="countdownItem">
+          <div className={`${countdownNumber}`}>{timeLeft.days}</div>
+          <div className={`${countdownLabel}`}>Dias</div>
+        </div>
+        <div className="countdownItem">
+          <div className={`${countdownNumber}`}>{timeLeft.hours}</div>
+          <div className={`${countdownLabel}`}>Horas</div>
+        </div>
+        <div className="countdownItem">
+          <div className={`${countdownNumber}`}>{timeLeft.minutes}</div>
+          <div className={`${countdownLabel}`}>Minutos</div>
+        </div>
+        <div className="countdownItem">
+          <div className={`${countdownNumber}`}>{timeLeft.seconds}</div>
+          <div className={`${countdownLabel}`}>Segundos</div>
+        </div>
       </div>
-      <div className="countdownItem">
-        <div className="countdownNumber">{timeLeft.hours}</div>
-        <div className="countdownLabel">Horas</div>
+      <div className='countdownDateContainer'>
+        <span className='h5'>{formatarDate(targetDate)}</span>
       </div>
-      <div className="countdownItem">
-        <div className="countdownNumber">{timeLeft.minutes}</div>
-        <div className="countdownLabel">Minutos</div>
-      </div>
-      <div className="countdownItem">
-        <div className="countdownNumber">{timeLeft.seconds}</div>
-        <div className="countdownLabel">Segundos</div>
-      </div>
-    </div>
+    </>
   );
 };
 

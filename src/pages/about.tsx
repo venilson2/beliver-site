@@ -1,5 +1,5 @@
 import Content from "@/components/about/Content";
-import Header from "@/components/about/Header";
+import Header from "@/components/header/Header";
 import AuthorBox from "@/components/authorBox/AuthorBox";
 import FollowInsta from "@/components/followInsta/FollowInsta";
 import Footer from "@/components/footer/footer";
@@ -15,7 +15,7 @@ const About = () => {
         <meta name="Sobre geração samuel" content="Sobre geração samuel" />
       </Head>
       <Navbar />
-      <Header />
+      <Header title="Sobre" subTitle="Um pouco de nós!" imgUrl="images/sample-540x540-1.jpg"/>
       <div id="content" className="site-content">
 		    <div className="wrapper">
 			    <div className="entry-content">

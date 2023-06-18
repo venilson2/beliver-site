@@ -1,21 +1,26 @@
-/* eslint-disable @next/next/no-img-element */
+interface HeaderProps {
+    title: string;
+    subTitle?: string;
+    imgUrl?: string;
+  }
 
-const Header = () => {
+const Header = ({title, subTitle, imgUrl }: HeaderProps) => {
     return (
         <>
             <header id="featured" className="site-featured">
                 <div id="featured-media" className="featured-media has-overlay">
                     <div className="wrapper">
                         <div className="page-title">
-                            <h1 className="display">Sobre</h1>
+                            <h1 className="display">{title}</h1>
                             <div className="entry-header">
                                 <div className="entry-meta">
-                                    <span className="entry-date published">Um pouco de nós!</span>
+                                    <span className="entry-date published">{subTitle}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img src="images/sample-1400x900-1.jpg" alt="" />
+                    {/* eslint-disable @next/next/no-img-element */}
+                    <img src={imgUrl} alt="" />
                 </div>
             </header>
         </>

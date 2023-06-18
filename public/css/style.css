@@ -4596,6 +4596,20 @@ body:not(.has-sidebar) .alignfull {
 	z-index: 1;
 }
 
+/* >>> Event-box */
+.card-event-box {
+	position: relative;
+	margin-top: calc(2 * var(--spacing--block) + 56px);
+	text-align: center;
+}
+
+.card-event-box .wrapper-event {
+	padding: calc(2 * var(--spacing--block)) calc(2 * var(--spacing--block));
+	border: var(--custom--border-width) solid var(--color--border);
+	background-color: var(--color--background);
+	box-shadow: var(--spacing--backdrop-initial) var(--spacing--backdrop-initial) 0 0 var(--color--border);
+}
+
 /* >>> Comments */
 #comments {
 	margin-top: calc(2 * var(--spacing--block));
@@ -5953,14 +5967,29 @@ body:not(.has-sidebar) .alignfull {
 	text-align: center;
 }
 
-.countdownNumber {
+.countdownNumberLg {
 	font-size: 8rem;
 	font-weight: bold;
 }
 
-.countdownLabel {
+.countdownLabelLg {
 	font-size: 1rem;
 	text-transform: uppercase;
+}
+
+.countdownNumberMd {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.countdownLabelMd {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.countdownDateContainer {
+	margin-top: 4rem;
+	text-align: center;
 }
   
 @media (max-width: 600px) {
@@ -5975,7 +6004,23 @@ body:not(.has-sidebar) .alignfull {
 		margin-bottom: 10px;
 	}
 
-	.countdownNumber {
-		font-size: 36px;
+	.countdownNumberLg, .countdownNumberMd {
+		font-size: 2rem;
+	}
+
+	.countdownDateContainer {
+		margin-top: 2rem;
+		text-align: center;
+	}
+}
+
+.eventBox {
+	width: 60vw;
+}
+
+@media (max-width: 600px) {
+
+	.eventBox {
+		width: 90vw;
 	}
 }

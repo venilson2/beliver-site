@@ -21,6 +21,62 @@ document.querySelectorAll( ".main-navigation .menu-item-has-children > a" ).forE
 		}
 	});
 });
+
+// Handle tab navigation with hash links.
+var custom_tabs = document.querySelectorAll( ".block-tabs" );
+if ( custom_tabs.length > 0 ) {
+	custom_tabs.forEach( function( tabs ) {
+		tabs.querySelectorAll( ":scope > ul a" ).forEach( function( tab_link ) {
+			tab_link.addEventListener( "click", function(e) {
+				if ( e.target.classList.contains( "is-active" ) ) {
+					e.preventDefault();
+					return false;
+				}
+
+				var target = document.querySelector( e.target.getAttribute( "href" ) );
+				target.setAttribute( "data-id", target.getAttribute( "id" ) );
+				target.removeAttribute( "id" );
+			});
+		});
+		tabs.classList.add( "loaded" );
+	});
+
+	window.addEventListener( "hashchange", function(e) {
+		if ( ! window.location.hash ) {
+			return;
+		}
+
+		var active_tab_content = document.querySelector( '.block-tab-content[data-id="' + window.location.hash.substring( 1 ) + '"]' );
+		if ( null === active_tab_content ) {
+			return;
+		}
+
+		active_tab_content.setAttribute( "id", active_tab_content.getAttribute( "data-id" ) );
+
+		var tab_container = active_tab_content.parentElement;
+		tab_container.querySelectorAll( ".block-tab-content:not(#" + active_tab_content.getAttribute( "data-id" ) + ")" ).forEach( function( inactive_container ) {
+			inactive_container.classList.remove( "is-active" );
+		});
+		active_tab_content.classList.add( "is-active" );
+
+		tab_container.querySelectorAll( ":scope > ul a" ).forEach( function( tab_link ) {
+			if ( tab_link.getAttribute( "href" ) == window.location.hash ) {
+				tab_link.classList.add( "is-active" );
+			} else {
+				tab_link.classList.remove( "is-active" );
+			}
+		});
+	});
+
+	if ( window.location.hash ) {
+		var active_tab = document.querySelector( '.block-tabs > ul a[href="' + window.location.hash + '"]' );
+		if ( null !== active_tab ) {
+			active_tab.dispatchEvent( new Event( "click" ) );
+			window.dispatchEvent( new Event( "hashchange" ) );
+		}
+	}
+}
+
 /*
 // By default, collapse current sub-menus for mobile view
 document.querySelectorAll( ".main-navigation .current-menu-parent, .main-navigation .current-menu-ancestor" ).forEach( function( menu_item ) {
@@ -189,61 +245,6 @@ if ( shine_cards.length > 0 ) {
 		card.style.setProperty( '--rotateY', '0' );
 		});
 	});
-}
-
-// Handle tab navigation with hash links.
-var custom_tabs = document.querySelectorAll( ".block-tabs" );
-if ( custom_tabs.length > 0 ) {
-	custom_tabs.forEach( function( tabs ) {
-		tabs.querySelectorAll( ":scope > ul a" ).forEach( function( tab_link ) {
-			tab_link.addEventListener( "click", function(e) {
-				if ( e.target.classList.contains( "is-active" ) ) {
-					e.preventDefault();
-					return false;
-				}
-
-				var target = document.querySelector( e.target.getAttribute( "href" ) );
-				target.setAttribute( "data-id", target.getAttribute( "id" ) );
-				target.removeAttribute( "id" );
-			});
-		});
-		tabs.classList.add( "loaded" );
-	});
-
-	window.addEventListener( "hashchange", function(e) {
-		if ( ! window.location.hash ) {
-			return;
-		}
-
-		var active_tab_content = document.querySelector( '.block-tab-content[data-id="' + window.location.hash.substring( 1 ) + '"]' );
-		if ( null === active_tab_content ) {
-			return;
-		}
-
-		active_tab_content.setAttribute( "id", active_tab_content.getAttribute( "data-id" ) );
-
-		var tab_container = active_tab_content.parentElement;
-		tab_container.querySelectorAll( ".block-tab-content:not(#" + active_tab_content.getAttribute( "data-id" ) + ")" ).forEach( function( inactive_container ) {
-			inactive_container.classList.remove( "is-active" );
-		});
-		active_tab_content.classList.add( "is-active" );
-
-		tab_container.querySelectorAll( ":scope > ul a" ).forEach( function( tab_link ) {
-			if ( tab_link.getAttribute( "href" ) == window.location.hash ) {
-				tab_link.classList.add( "is-active" );
-			} else {
-				tab_link.classList.remove( "is-active" );
-			}
-		});
-	});
-
-	if ( window.location.hash ) {
-		var active_tab = document.querySelector( '.block-tabs > ul a[href="' + window.location.hash + '"]' );
-		if ( null !== active_tab ) {
-			active_tab.dispatchEvent( new Event( "click" ) );
-			window.dispatchEvent( new Event( "hashchange" ) );
-		}
-	}
 }
 
 // Handle collapsible elements
