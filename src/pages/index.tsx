@@ -15,7 +15,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <HopeEnvent />
-      <LastPodcast />
+      {/* <LastPodcast /> */}
       <Footer />
     </>
   );

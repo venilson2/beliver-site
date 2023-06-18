@@ -5967,6 +5967,7 @@ body:not(.has-sidebar) .alignfull {
 
 	.countdownContainer {
 		justify-content: center;
+		gap: 3rem;
 	}
 
 	.countdownItem {

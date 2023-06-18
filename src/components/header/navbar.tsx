@@ -41,7 +41,7 @@ const Navbar = () => {
               </ul>
             </li>
             {/* <li><Link href="/blog">Blog</Link></li> */}
-            <li><Link href="/event">Evento</Link></li>
+            <li><Link href="/events">Eventos</Link></li>
             <li><Link href="/contact">Contato</Link></li>
             <li className="menu-item-scheme">
               <a href="#" title="Toggle color scheme">
@@ -62,8 +62,7 @@ const Navbar = () => {
         </nav>
         <nav className="social-navigation">
           <ul className="menu">
-            <li><a href="https://twitter.com" title="Twitter profile"><span className="screen-reader-text">Twitter profile</span></a></li>
-            <li><a href="https://instagram.com" title="Instagram profile"><span className="screen-reader-text">Instagram profile</span></a></li>
+            <li><a href="https://instagram.com/ggeracaosamuel/" title="Instagram profile"><span className="screen-reader-text">Instagram profile</span></a></li>
             <li><a href="https://youtube.com" title="YouTube page"><span className="screen-reader-text">YouTube page</span></a></li>
           </ul>
         </nav>

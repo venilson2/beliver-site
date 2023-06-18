@@ -30,8 +30,7 @@ const Footer = () => {
           <div className="widget widget_nav_menu">
             <nav className="social-navigation">
               <ul className="menu">
-                <li><a href="https://twitter.com"><span className="screen-reader-text">Twitter profile</span></a></li>
-                <li><a href="https://instagram.com"><span className="screen-reader-text">Instagram profile</span></a></li>
+                <li><a href="https://instagram.com/ggeracaosamuel/"><span className="screen-reader-text">Instagram profile</span></a></li>
                 <li><a href="https://youtube.com"><span className="screen-reader-text">YouTube page</span></a></li>
               </ul>
             </nav>

@@ -7,9 +7,10 @@ const Content = () => {
         <>
                 <figure className="block-image alignleft shine-on-children-hover">
 					<a href="tmp/sample-400x600-3.jpg" data-fancybox="test-gallery">
-                        <img src="images/sample-540x540-1.jpg" width="200" height="300" loading="lazy" alt="" />
+                        <picture>
+                            <img src="images/sample-540x540-1.jpg" width="200" height="300" loading="lazy" alt="" />
+                        </picture>
                         <span className="shine-canvas"></span></a>
-					<figcaption className="caption-text">Adipiscing arcu etiam</figcaption>
 				</figure>
 				<p>
                     Objectively morph e-business synergy through prospective markets. Dramatically underwhelm 

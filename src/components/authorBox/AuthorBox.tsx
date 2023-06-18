@@ -1,15 +1,25 @@
-const AuthorBox = () => {
+interface AuthorBoxProps {
+    img_url: string;
+    name: string;
+    description: string;
+    url_face?: string;
+    url_insta?: string;
+  }
+
+const AuthorBox = ({img_url, name, description, url_face, url_insta}: AuthorBoxProps) => {
     return (
         <>
             <aside className="author-box">
                 <div className="wrapper">
                     <figure className="author-box-image">
-                        <img src="images/sample-540x540-1.jpg" width="100" height="100" className="avatar" loading="lazy" alt="" decoding="async" />
+                        <picture>
+                            <img src={img_url} width="100" height="100" className="avatar" loading="lazy" alt="" decoding="async" />
+                        </picture>
                     </figure>
                     <div className="author-box-content">
-                        <h4 className="author-box-title"><span><a href="" title="Visit o Líder" rel="author external">Nome</a></span></h4>
+                        <h4 className="author-box-title"><span title="Visit o Líder" rel="author external">{name}</span></h4>
                         <div className="author-box-description">
-                            informaões entre em contato <a href="">Facebook</a> ou <a href="">Instagram</a>
+                        {description} {/* <a href={url_face}>Facebook</a> ou <a href={url_insta}>Instagram</a> */}
                         </div>
                     </div>
                 </div>

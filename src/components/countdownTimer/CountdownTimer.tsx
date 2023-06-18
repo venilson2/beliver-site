@@ -36,15 +36,15 @@ const CountdownTimer: React.FC<CountdownProps> = ({ targetDate }) => {
     <div className="countdownContainer">
       <div className="countdownItem">
         <div className="countdownNumber">{timeLeft.days}</div>
-        <div className="countdownLabel">Dia</div>
+        <div className="countdownLabel">Dias</div>
       </div>
       <div className="countdownItem">
         <div className="countdownNumber">{timeLeft.hours}</div>
-        <div className="countdownLabel">Hora</div>
+        <div className="countdownLabel">Horas</div>
       </div>
       <div className="countdownItem">
         <div className="countdownNumber">{timeLeft.minutes}</div>
-        <div className="countdownLabel">Minuto</div>
+        <div className="countdownLabel">Minutos</div>
       </div>
       <div className="countdownItem">
         <div className="countdownNumber">{timeLeft.seconds}</div>

@@ -96,7 +96,7 @@ const FollowInsta = () => {
                             </span>
                         </a>
                     </div>
-                    <a href="https://instagram.com/ggeracaosamuel/" target="_blank" className="outro-gallery"><span>Algum Texto bacana aqui</span></a>
+                    <a href="https://instagram.com/ggeracaosamuel/" target="_blank" className="outro-gallery"><span>Geração Samuel</span></a>
                 </div>
             </section>
         </>

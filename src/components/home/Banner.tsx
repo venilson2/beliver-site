@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Banner = () => {
@@ -15,6 +16,10 @@ const Banner = () => {
                             Queremos ser <ins>instrumentos de Cristo</ins> para tocar a alma das pessoas, proporcionando momentos de reflexão, 
                             inspiração e conexão com o Senhor Jesus. Nosso propósito é compartilhar o amor de Deus e a mensagem transformadora de Cristo.
                         </p>
+						<br />
+						<p>
+							<Link href="/about" className="button button-primary">Conheça Nossa História</Link> 
+						</p>
 					</div>  
 					<div className="episode-player episode-type-audio">
 					</div>
