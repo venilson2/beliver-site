@@ -21,7 +21,7 @@ document.querySelectorAll( ".main-navigation .menu-item-has-children > a" ).forE
 		}
 	});
 });
-
+/*
 // Handle tab navigation with hash links.
 var custom_tabs = document.querySelectorAll( ".block-tabs" );
 if ( custom_tabs.length > 0 ) {
@@ -76,7 +76,7 @@ if ( custom_tabs.length > 0 ) {
 		}
 	}
 }
-
+*/
 /*
 // By default, collapse current sub-menus for mobile view
 document.querySelectorAll( ".main-navigation .current-menu-parent, .main-navigation .current-menu-ancestor" ).forEach( function( menu_item ) {

@@ -3785,6 +3785,7 @@ body:not(.has-sidebar) .alignfull {
 	min-width: 0;
 	word-break: break-word;
 	overflow-wrap: break-word;
+	margin-bottom: 3rem;
 }
 
 @media (min-width: 576px) {
@@ -3795,6 +3796,10 @@ body:not(.has-sidebar) .alignfull {
 
 	.block-columns:not(.is-not-stacked-on-mobile) > .block-column:not(:first-child) {
 		margin-left: var(--spacing--block);
+	}
+
+	.block-column {
+		margin-bottom: 3rem;
 	}
 }
 
@@ -3964,6 +3969,7 @@ body:not(.has-sidebar) .alignfull {
 	padding: 0;
 	margin-bottom: var(--spacing--block);
 	border-bottom: var(--custom--border-width) solid var(--color--secondary);
+	display: flex;
 }
 
 .block-tabs > ul:after {
@@ -3975,6 +3981,7 @@ body:not(.has-sidebar) .alignfull {
 .block-tabs > ul li {
 	display: inline-block;
 	margin: 0;
+	width: 50%;
 }
 
 .block-tabs > ul a {
@@ -3984,6 +3991,7 @@ body:not(.has-sidebar) .alignfull {
 	padding: calc(0.75 * var(--spacing--block)) calc(1.5 * var(--spacing--block));
 	color: inherit;
 	transition: all var(--custom--transition-duration);
+	text-align: center;
 }
 
 .block-tabs > ul a:hover:focus {
