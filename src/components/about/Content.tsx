@@ -32,7 +32,7 @@ const Content = () => {
             <h6></h6>
             <div className="block-episode">
                 <div className="episode-player episode-type-video shine-on-hover is-pip-supported" style={{ height: '60vh' }}>
-                    <video src="media/believer_video_1.mp4" poster="tmp/sample-featured-video1.jpg" preload="metadata" width="1280" height="720"></video>
+                    <video src="media/believer_video_1.mp4" poster="images/believer_2.jpg" preload="metadata" width="1280" height="720"></video>
                     <a href="media/believer_video_1.mp4" className="media-cover"><span className="media-play-pause"></span></a>
                     <div className="media-controls">
                         <button className="media-play-pause"></button>
@@ -47,7 +47,7 @@ const Content = () => {
             <p>
                 <strong>
                     O Believer do ano passado foi uma experiência impactante e transformadora. 
-                    Deixou um gostinho de quero mais para o próximo evento. Fortaleceu a fé e despertou uma paixão ainda maior por Deus. 
+                    Deixou um quero mais para o próximo evento. Fortaleceu a fé e despertou uma paixão ainda maior por Deus. 
                     Marque em sua agenda: dia 25 de novembro teremos o Believer - A Esperança! Não perca!
                 </strong>
             </p>

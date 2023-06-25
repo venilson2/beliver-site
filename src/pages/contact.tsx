@@ -12,7 +12,7 @@ const Contact = () => {
         <meta name="Contato Geração Samuel" content="Contato Geração Samuel" />
       </Head>
       <Navbar />
-      <Header title="Contato" imgUrl="images/sample-540x540-2.jpg"/>
+      <Header title="Contato" imgUrl="images/logo.jpg"/>
       <Information />
       <Footer />
      </> 

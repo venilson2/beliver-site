@@ -15,7 +15,7 @@ const About = () => {
         <meta name="Sobre Geração Samuel" content="Sobre Geração Samuel" />
       </Head>
       <Navbar />
-      <Header title="Sobre" subTitle="Um pouco de nós!" imgUrl="images/sample-540x540-1.jpg"/>
+      <Header title="Sobre" subTitle="Um pouco de nós!" imgUrl="images/logo.jpg"/>
       <div id="content" className="site-content">
 		    <div className="wrapper">
 			    <div className="entry-content">

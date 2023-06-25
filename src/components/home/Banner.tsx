@@ -36,7 +36,16 @@ const Banner = () => {
 					</div>
 				</div>
 			</div>
-			{/* <video src="media/galaxy.mp4" poster="tmp/sample-featured-video2.jpg" preload="metadata" muted={true} autoPlay={true} loop={true} width="1320" height="756"></video> */}
+			<video 
+				src="media/galaxy.mp4" 
+				poster="images/logo.jpg" 
+				preload="metadata" 
+				muted={true} 
+				autoPlay={true} 
+				loop={true} 
+				width="1320" 
+				height="756">
+			</video>
 		</div>
 	</header>
   </>

@@ -42,8 +42,8 @@ const TabPanel = () => {
         }`}
       >
         <p>
-          Once deposited funds are added to your Investor Account, you will
-          receive a confirmation e-mail and will be able to make investments.
+          Este formulário é para solicitar assistência alimentar. Nossa equipe visitará você e 
+          fornecerá alimentos para ajudar durante esse período difícil.
         </p>
         <form method="post">
           <Input name="name" label="Nome Completo" required positionColumn={"first-column"}/>
@@ -86,9 +86,8 @@ const TabPanel = () => {
         }`}
       >
         <p>
-          We keep investors money segregated from funds for business operations.
-          You can withdraw funds that are not invested in loans from your
-          investor account to your account at any time.
+          Este formulário permite que você contribua com doações de alimentos para o projeto. 
+          Sua participação ajuda a alimentar pessoas necessitadas em nossa comunidade.
         </p>
         <form method="post">
             <Input name="name" label="Nome Completo" required positionColumn={"first-column"}/>

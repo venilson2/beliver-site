@@ -46,7 +46,7 @@ const LastPodcast = () => {
             <div className="featured-cover">
               <a href="single-episode.html" className="shine-on-hover">
                 <picture>
-                  <img src="images/sample-540x540-1.jpg" alt="Geração Samuel" />
+                  <img src="images/logo.jpg" alt="Geração Samuel" />
                 </picture>
                 <span className="flash">new</span>
                 <span className="shine-canvas"></span>
