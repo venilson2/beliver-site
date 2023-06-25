@@ -6032,3 +6032,10 @@ body:not(.has-sidebar) .alignfull {
 		width: 90vw;
 	}
 }
+
+.map{
+	filter: grayscale(100%) invert(92%);
+	height: 50vh;
+	width: 100vw;
+}
+  

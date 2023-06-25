@@ -1,3 +1,4 @@
+import Map from "./Map"
 import Form from "./form"
 
 const Information = () => {
@@ -9,7 +10,7 @@ const Information = () => {
                         <div className="block-columns text-center">
                             <div className="block-column">
                                 <h4>Endereço</h4>
-                                <p className="text-faded text-uppercase">Rua Henrique Muzzio, 396<br />Jardim Varginha, São Paulo - SP, 04857-040</p>
+                                <p className="text-faded text-uppercase">Rua Henrique Muzzio, 396<br />Jardim Varginha<br /> São Paulo - SP, 04857-040</p>
                             </div>
                             <div className="block-column">
                                 <h4>Nosso Email</h4>
@@ -20,7 +21,7 @@ const Information = () => {
                                 <p className="text-faded text-uppercase">+1 2345 678 910<br>+8 2234 835 199</p>
                             </div> */}
                         </div>
-                        <br />
+                        <Map />
                         <br />
                         <Form />
                     </div>
