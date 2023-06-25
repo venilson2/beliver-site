@@ -12,7 +12,7 @@ const About = () => {
     <>
       <Head>
         <title>Geração Samuel | Sobre</title>
-        <meta name="Sobre geração samuel" content="Sobre geração samuel" />
+        <meta name="Sobre Geração Samuel" content="Sobre Geração Samuel" />
       </Head>
       <Navbar />
       <Header title="Sobre" subTitle="Um pouco de nós!" imgUrl="images/sample-540x540-1.jpg"/>
@@ -31,16 +31,43 @@ const About = () => {
               <cite>Marcos 16:15</cite>
             </blockquote>
             <figure className="block-image alignwide shine-on-children-hover">
-              <a href="images/sample-540x540-1.jpg" data-fancybox="gallery">
+              <a href="images/gs_8.jpg" data-fancybox="gallery">
                 <picture>
-                  <img src="images/sample-540x540-1.jpg" width="1400" height="900" alt="" />
+                  <img src="images/gs_8.jpg" width="1400" height="900" alt="" />
                 </picture>
                   <span className="shine-canvas"></span>
                 </a>
-                <a href="images/sample-540x540-2.jpg" data-fancybox="gallery"></a>
-                <a href="images/sample-540x540-3.jpg" data-fancybox="gallery"></a>
-                <a href="images/sample-540x540-4.jpg" data-fancybox="gallery"></a>
             </figure>
+            <div className="block-gallery columns-4">
+              <figure className="block-image">
+                <a href="images/gs_7.jpg" data-fancybox="gallery">
+                  <picture>
+                    <img src="images/gs_7.jpg" width="800" height="800" alt=""/>
+                  </picture>
+                </a>
+              </figure>
+              <figure className="block-image">
+                <a href="images/gs_2.jpg" data-fancybox="gallery">
+                  <picture>
+                    <img src="images/gs_2.jpg" width="800" height="800" alt=""/>
+                  </picture>
+                </a>
+              </figure>
+              <figure className="block-image">
+                <a href="images/gs_3.jpg" data-fancybox="gallery">
+                  <picture>
+                    <img src="images/gs_3.jpg" width="800" height="800" alt=""/>
+                  </picture>
+                </a>
+              </figure>
+              <figure className="block-image">
+                <a href="images/gs_6.jpg" data-fancybox="gallery">
+                  <picture>
+                    <img src="images/gs_6.jpg" width="800" height="800" alt=""/>
+                  </picture>
+                </a>
+              </figure>
+            </div>
           </div>
         </div>
       </div>

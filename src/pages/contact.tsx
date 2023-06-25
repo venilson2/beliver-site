@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <Head>
         <title>Geração Samuel | Contato</title>
-        <meta name="Contato geração samuel" content="Contato geração samuel" />
+        <meta name="Contato Geração Samuel" content="Contato Geração Samuel" />
       </Head>
       <Navbar />
       <Header title="Contato" imgUrl="images/sample-540x540-2.jpg"/>

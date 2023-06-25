@@ -4,28 +4,28 @@ import { useEffect, useRef } from "react";
 
 const LastPodcast = () => {
 
-  const videoRef = useRef({ muted: false, autoplay: true, loop: true });
-  const audioRef = useRef({ muted: false, autoplay: false, loop: false });
+  // const videoRef = useRef({ muted: false, autoplay: true, loop: true });
+  // const audioRef = useRef({ muted: false, autoplay: false, loop: false });
 
-  useEffect(() => {
-    const video = videoRef.current;
+  // useEffect(() => {
+  //   const video = videoRef.current;
 
-    if (video) {
-      video.muted = true;
-      video.autoplay = true;
-      video.loop = true;
-    }
-  }, [])
+  //   if (video) {
+  //     video.muted = true;
+  //     video.autoplay = true;
+  //     video.loop = true;
+  //   }
+  // }, [])
 
-  useEffect(() => {
-    const audio = audioRef.current;
+  // useEffect(() => {
+  //   const audio = audioRef.current;
 
-    if (audio) {
-      audio.muted = true;
-      audio.autoplay = true;
-      audio.loop = true;
-    }
-  }, []);
+  //   if (audio) {
+  //     audio.muted = true;
+  //     audio.autoplay = true;
+  //     audio.loop = true;
+  //   }
+  // }, []);
 
   return (
     <>
@@ -46,7 +46,7 @@ const LastPodcast = () => {
             <div className="featured-cover">
               <a href="single-episode.html" className="shine-on-hover">
                 <picture>
-                  <img src="images/sample-540x540-1.jpg" alt="Feração Samuel" />
+                  <img src="images/sample-540x540-1.jpg" alt="Geração Samuel" />
                 </picture>
                 <span className="flash">new</span>
                 <span className="shine-canvas"></span>
@@ -62,13 +62,16 @@ const LastPodcast = () => {
               </div>
             </div>
           </div>
-          {/* <video
-            ref={videoRef as React.RefObject<HTMLVideoElement>}
-            src="/media/sample-featured-video2.mp4"
-            preload="metadata"
-            width={1320}
-            height={756}
-          /> */}
+          {/* <video 
+            src="media/sample-featured-video2.mp4" 
+            poster="images/sample-540x540-1.jpg" 
+            preload="metadata" 
+            muted={true} 
+            autoPlay={true}
+            loop={true}
+            width="1320" 
+            height="756">
+          </video> */}
         </div>
       </div>
     </>

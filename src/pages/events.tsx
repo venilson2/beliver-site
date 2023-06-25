@@ -13,7 +13,7 @@ const Events = () => {
     <>
       <Head>
         <title>Geração Samuel | Eventos</title>
-        <meta name="Sobre geração samuel" content="Sobre geração samuel" />
+        <meta name="Geração Samuel" content="Sobre | Geração Samuel" />
       </Head>
       <Navbar />
       <Header title="Eventos" imgUrl="images/sample-540x540-5.jpg" />

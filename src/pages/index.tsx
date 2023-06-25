@@ -11,11 +11,12 @@ const Home = () => {
     <>
       <Head>
         <title>Geração Samuel | Home</title>
+        <meta name="Geração Samuel" content="Home | Geração Samuel" />
       </Head>
       <Navbar />
       <Banner />
       <HopeEnvent />
-      {/* <LastPodcast /> */}
+      <LastPodcast />
       <Footer />
     </>
   );

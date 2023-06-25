@@ -95,17 +95,31 @@ const AudioPlayer = () => {
   };
 
   return (
-    <div className={`episode-player episode-type-audio ${isLoaded ? 'is-loaded' : ''} ${isPlaying ? 'playing' : ''}`}>
-      <audio ref={audioRef} controls style={{display: 'none'}}>
-        <source src="/media/preview1.mp3" type="audio/mpeg" />
+    // <div className={`episode-player episode-type-audio ${isLoaded ? 'is-loaded' : ''} ${isPlaying ? 'playing' : ''}`}>
+    //   <audio ref={audioRef} controls style={{display: 'none'}}>
+    //     <source src="/media/preview1.mp3" type="audio/mpeg" />
+    //   </audio>
+    //   <div className="media-controls">
+    //     <button className="media-play-pause" ref={playPauseButtonRef}></button>
+    //     <span className="media-current-time" ref={mediaCurrentTimeRef}>00:00</span>
+    //     <div className="media-time-rail">
+    //       <span className="media-time-rail-current" ref={timeRailCurrentRef}></span>
+    //     </div>
+    //     <span className="media-duration" ref={durationRef}>00:41</span>
+    //     <a className="media-download" href="https://html.liviucerchez.com/common/preview1.mp3" download="" title="Download episode (831.6 KB)"></a>
+    //     <a className="media-transcript" href="#" title="View transcript"></a>
+    //   </div>
+    // </div>
+    <div className="episode-player episode-type-audio">
+      <audio>
+        <source src="media/preview1.mp3" type="audio/mpeg"/>
       </audio>
       <div className="media-controls">
-        <button className="media-play-pause" ref={playPauseButtonRef}></button>
-        <span className="media-current-time" ref={mediaCurrentTimeRef}>00:00</span>
-        <div className="media-time-rail">
-          <span className="media-time-rail-current" ref={timeRailCurrentRef}></span>
-        </div>
-        <span className="media-duration" ref={durationRef}>00:41</span>
+        <button className="media-play-pause"></button>
+        <button className="media-rate" data-rates="1.5 0.5 1" title="Playback speed">1x</button>
+        <span className="media-current-time">00:00</span>
+        <div className="media-time-rail"><span className="media-time-rail-current"></span></div>
+        <span className="media-duration">00:41</span>
         <a className="media-download" href="https://html.liviucerchez.com/common/preview1.mp3" download="" title="Download episode (831.6 KB)"></a>
         <a className="media-transcript" href="#" title="View transcript"></a>
       </div>
